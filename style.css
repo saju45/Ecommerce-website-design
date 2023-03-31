@@ -1,0 +1,191 @@
+/* reset code and common code starts here */
+
+:root{
+    --primary-color:rgb(11,181,48);
+    --secondary-color:rgba(36,122,55,0.9);
+    --padding: 0.5rem;
+    --transition: all 0.3s;
+    --border-radius:0.6rem;
+    --box-shadow:0.1rem 0.2rem 0.8rem rgba(205,202,202,0.5);
+}
+
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.flex-space-around{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn{
+    border: none;
+    padding: var(--padding);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* reset code and common code ends here */
+
+
+
+/* Navbar starts here */
+
+#menu-icon{
+    display: none;
+}
+
+nav{
+    font-family: fantasy;
+    font-size: 1.2rem;
+
+    position:sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.nav-upper{
+    min-height: 10vh;
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+
+}
+
+.nav-list{
+
+    transition: var(--transition);
+}
+
+
+.nav-list:hover{
+    text-decoration: overline;
+    color: black;
+}
+
+
+
+.nav-link{
+    transition: var(--transition);
+    color: white;
+}
+
+.nav-link:hover{
+    text-decoration: overline;
+    color: black;
+}
+
+
+.profile-icon{
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    filter: saturate(0);
+    transition: var(--transition);
+
+}
+
+.profile-icon:hover{
+    filter: saturate(1);
+}
+.nav-lower{
+    min-height: 10vh;
+    background-color: var(--secondary-color);
+    font-weight: bolder;
+}
+
+.nav-brand{
+    font-size: 1.5rem;
+}
+
+
+
+
+/* Navbar ends here */
+
+
+/* Footer starts here */
+
+.footer{
+    min-height: 10vh;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px;
+
+}
+
+.btn-subscribe{
+    margin-left: -5px;
+}
+
+.footer__input{
+    border: none;
+    padding: var(--padding);
+}
+
+/* footer ends here */
+
+
+@media (max-width:992px) {
+
+    .flex-space-around{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    #menu-icon{
+        
+        display: block;
+        text-align: center;
+        margin: 1rem 0;
+        cursor: pointer;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+}
+
+
+@media (max-width:768px) {
+
+   
+
+}
+
+@media (max-width:600px) {
+
+
+ 
+
+   
+
+}
