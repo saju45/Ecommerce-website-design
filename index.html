@@ -38,7 +38,7 @@
             </li>
 
             <li class="nav-list">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="card.html">
 
                     <span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         Card 2 products -$124
@@ -53,9 +53,353 @@
 
     <!-- Navbar ends here -->
 
+    <!-- Header starts here -->
 
-    <main>
-        <h2>Home Page </h2>
+    <header class="header ">
+        <div class="banner flex-space-around">
+            <marquee class="banner__title" behavior="" direction="">  50% Sales goning on</marquee>
+
+        <div class="features flex-space-around">
+            <article class="feature flex-center">
+                <i class="fa fa-truck fa-3x feature__icon" aria-hidden="true" ></i>
+                <h3>Shipping within 7 days</h3>
+
+            </article>
+
+            <article class="feature flex-center">
+                <i class="fa fa-comment fa-3x feature__icon" aria-hidden="true"></i>
+                <h3>Support 24/7</h3>
+
+            </article>
+
+ 
+            <article class="feature flex-center">
+                <i class="fa fa-credit-card fa-3x feature__icon" aria-hidden="true" ></i>
+                <h3>Safe Payment</h3>
+
+            </article>
+
+        </div>
+
+        </div>
+       
+    </header>
+
+    <!-- Header ends here -->
+
+
+    <main class="flex-center">
+
+        <div class="sidebar">
+
+            <section class="categories-section">
+
+                <h3 class="section__title">
+                    Categories
+                </h3>
+
+                <ul class="list">
+                    <li class="list-item"> 
+                        <label for="phone">
+                        <input type="checkbox" id="phone" value="phone">
+                        TelePhones</label>
+                    </li>
+
+                    <li class="list-item"> 
+                        <label for="tablets">
+                        <input type="checkbox" id="tablets" value="tablets">
+                        Tablets</label>
+                    </li>
+
+                    <li class="list-item"> 
+                        <label for="phones">
+                        <input type="checkbox" id="table" value="table">
+                        Tables</label>
+                    </li>
+
+                    <li class="list-item"> 
+                        <label for="television">
+                        <input type="checkbox" id="television" value="television">
+                        Televisions</label>
+                    </li>
+
+                    <li class="list-item"> 
+                        <label for="computer">
+                        <input type="checkbox" id="computer" value="computer">
+                        Computer</label>
+                    </li>
+
+                    <li class="list-item"> 
+                        <label for="headphone">
+                        <input type="checkbox" id="headphone" value="headphone">
+                        Headphones</label>
+                    </li>
+                    
+                    <li class="list-item"> 
+                        <label for="smartphone">
+                        <input type="checkbox" id="smartphone" value="smartphone">
+                        Smart phones</label>
+                    </li>
+                    
+                </ul>
+
+            </section>
+
+            <section class="price-section">
+
+                <h3 class="section__title">
+                    Price Range
+                </h3>
+                <ul>
+
+                    <li class="list-item"> 
+                        <label for="price1">
+                        <input type="radio" id="price1" value="[0,20]">
+                        $0-$20</label>
+                    </li>
+
+                    <li class="list-item"> 
+                        <label for="price2">
+                        <input type="radio" id="price2" value="[21,50]">
+                        $21-$50</label>
+                    </li>
+
+                    <li class="list-item"> 
+                        <label for="price3">
+                        <input type="radio" id="price3" value="[51,100]">
+                        $51-$100</label>
+                    </li>
+
+                 <li class="list-item"> 
+                        <label for="price4">
+                        <input type="radio" id="price4" value="[101,300]">
+                        $101-$300</label>
+                   </li>
+
+                  <li class="list-item"> 
+                        <label for="price5">
+                        <input type="radio" id="price5" value="[300+]">
+                        $300+</label>
+                    </li>
+
+                </ul>
+
+
+            </section>
+
+            <section class="shipping-section">
+                <h3 class="section__title">
+                    Shipping Options
+                </h3>
+
+                <ul>
+                    <li class="list-item"> 
+                        <label for="free">
+                        <input type="radio" id="free" value="free">
+                        free Shipping </label>
+                    </li>
+
+                    <li class="list-item"> 
+                        <label for="paid">
+                        <input type="radio" id="paid" value="paid">
+                        paid Shiping </label>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+
+        <div class="main-content">
+            <section class="actions flex-space-around">
+
+                <div class="actions__sort">
+                    <label for="sort">Sort by : </label>
+                    <select name="sort" id="sort">
+                        <option value="sold">Most sold first</option>
+                        <option value="rating">Most rated first</option>
+                        <option value="price">Cheapest first</option>
+                        <option value="arrival">Newest first</option>
+                        <option value="discount">Bigest discount first</option>
+
+
+                    </select>
+                </div>
+
+                <div class="actions__search">
+
+                    <input type="text" placeholder="Search product">
+                    <button class="btn">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- Product section starts here -->
+
+            <section class="products">
+
+                <article class="product card">
+
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+
+                    <img class="product_image" src="/images/image1.jpg" alt="Laptop">
+
+                    <div class="product__body">
+
+                        <h3 class="product__name">Hp Laptop </h3>
+
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+
+                        </p>
+
+                        <p class="product__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aut maxime harum quam 
+                            repellendus nostrum!... <a href="product.html" class="learn-mores">Learn more</a>
+                        </p>
+                        <h4 class="product__price">$225.9</h4>
+                        <p class="product__rating">Rating : 4.5/5</p>
+                        <button class="btn procut__button">Add To Card</button>
+                    </div>
+
+                </article>
+
+                <article class="product card">
+
+                    <div class="badge">
+                        <span>8 in stock</span>
+                        <hr class="hr-design">
+                        <span>5 sold</span>
+                    </div>
+
+                    <img class="product_image" src="/images/image2.jpg" alt="Laptop">
+
+                    <div class="product__body">
+
+                        <h3 class="product__name">Dell Laptop </h3>
+
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+
+                        </p>
+
+                        <p class="product__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aut maxime harum quam 
+                            repellendus nostrum!... <a href="product.html" class="learn-mores">Learn more</a>
+                        </p>
+                        <h4 class="product__price">$225.9</h4>
+                        <p class="product__rating">Rating : 4.5/5</p>
+                        <button class="btn procut__button">Add To Card</button>
+                    </div>
+
+                </article>
+
+                <article class="product card">
+
+                    <div class="badge">
+                        <span>8 in stock</span>
+                        <hr class="hr-design">
+                        <span>5 sold</span>
+                    </div>
+
+                    <img class="product_image" src="/images/image3.jpg" alt="Laptop">
+
+                    <div class="product__body">
+
+                        <h3 class="product__name">Apple Laptop </h3>
+
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+
+                        </p>
+
+                        <p class="product__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aut maxime harum quam 
+                            repellendus nostrum!... <a href="product.html" class="learn-mores">Learn more</a>
+                        </p>
+                        <h4 class="product__price">$225.9</h4>
+                        <p class="product__rating">Rating : 4.5/5</p>
+                        <button class="btn procut__button">Add To Card</button>
+                    </div>
+
+                </article>
+
+                <article class="product card">
+
+                    <div class="badge">
+                        <span>8 in stock</span>
+                        <hr class="hr-design">
+                        <span>5 sold</span>
+                    </div>
+
+                    <img class="product_image" src="/images/image4.jpg" alt="Laptop">
+
+                    <div class="product__body">
+
+                        <h3 class="product__name">Dell Laptop </h3>
+
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+
+                        </p>
+
+                        <p class="product__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aut maxime harum quam 
+                            repellendus nostrum!... <a href="product.html" class="learn-mores">Learn more</a>
+                        </p>
+                        <h4 class="product__price">$225.9</h4>
+                        <p class="product__rating">Rating : 4.5/5</p>
+                        <button class="btn procut__button">Add To Card</button>
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <div class="pagination">
+
+                <button class="btn pagination__button"><i class="fa fa-angle-left" aria-hidden="true"></i>
+                </button>
+                <button class="btn pagination__button">2</button>
+                <button class="btn pagination__button">3</button>
+                <button class="btn pagination__button">4</button>
+                <button class="btn pagination__button">5</button>
+                <button class="btn pagination__button">6</button>
+                <button class="btn pagination__button">7</button>
+                <button class="btn pagination__button">8</button>
+                <button class="btn pagination__button">9</button>
+                <button class="btn pagination__button">10</button>
+                <button class="btn pagination__button">...</button>
+                <button class="btn pagination__button">50</button>
+                <button class="btn pagination__button"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
+
+            </div>
+
+            <!-- Product section ends here -->
+
+        </div>
+
+
+
+
+
     </main>
 
 
